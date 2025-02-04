@@ -1,0 +1,42 @@
+{
+  "theme": {
+    "name": "Blue",
+    "fontFamily": "PlaywriteIN",
+    "fontWeight": "bold",
+    "fontStyle": "italic",
+    "primaryColor": "#007bff",
+    "secondaryColor": "#ff5722"
+  },
+  "layout": {
+    "header": {
+      "content": {
+        "title": "Welcome to LMS",
+        "subtitle": "Best Learning Platform"
+      }
+    },
+    "footer": {
+      "content": {
+        "text": "© 2025 LMS Platform - All Rights Reserved",
+        "links": [
+          "Privacy Policy",
+          "Terms of Service"
+        ]
+      }
+    },
+    "courseCard": {
+      "type": "course1",
+      "content": [
+        {
+          "title": "React Fundamentals",
+          "description": "Learn React from scratch.",
+          "price": "$99"
+        },
+        {
+          "title": "Advanced Next.js",
+          "description": "Master Next.js with real-world projects.",
+          "price": "$149"
+        }
+      ]
+    }
+  }
+}

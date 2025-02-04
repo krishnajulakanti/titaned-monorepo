@@ -12,10 +12,10 @@ import LMSPage from '../../../../packages/shared/components/LmsPage';
 const Home = () => {
   return (
     <div>
-      <Header />
+      <LMSPage />
+      {/* <Header /> */}
       <LocalStorageCleaner /> {/* Step 2: Add Client Component */}
       <br />
-      <LMSPage />
       <h2>Welcome to Nextjs Home</h2>
       <br />
       <Link href="/users" className="button button--login">Go to Users</Link>

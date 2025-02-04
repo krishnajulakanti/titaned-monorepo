@@ -1,0 +1,93 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: white;
+  border-bottom: 1px solid #ddd;
+}
+
+.logo img {
+  max-height: 40px;
+}
+
+.nav {
+  flex-grow: 1;
+
+
+
+  ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+
+    &.left {
+      justify-content: flex-start;
+    }
+
+    &.center {
+      justify-content: center;
+    }
+
+    &.right {
+      justify-content: flex-end;
+    }
+
+    .menuItem {
+      position: relative;
+
+      &:hover .subMenu {
+        display: block;
+      }
+
+      .menuLink {
+        text-decoration: none;
+        font-weight: bold;
+        color: black;
+      }
+
+      .subMenu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: white;
+        list-style: none;
+        border: 1px solid #ddd;
+        box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+
+        li {
+          padding: 8px 12px;
+        }
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+    }
+  }
+}
+
+.authButtons {
+  display: flex;
+  gap: 10px;
+
+  .login,
+  .signup {
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 4px;
+    font-weight: bold;
+  }
+
+  .login {
+    border: 1px solid #007bff;
+    color: #007bff;
+  }
+
+  .signup {
+    background-color: #007bff;
+    color: white;
+  }
+}

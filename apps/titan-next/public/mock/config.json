@@ -9,34 +9,61 @@
   },
   "layout": {
     "header": {
-      "content": {
-        "title": "Welcome to LMS",
-        "subtitle": "Best Learning Platform"
-      }
-    },
-    "footer": {
-      "content": {
-        "text": "© 2025 LMS Platform - All Rights Reserved",
-        "links": [
-          "Privacy Policy",
-          "Terms of Service"
-        ]
-      }
-    },
-    "courseCard": {
-      "type": "course1",
-      "content": [
+      "logo": {
+        "imageUrl": "data:image/png;base64,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"
+      },
+      "menuAlignment": "center",
+      "menus": [
         {
-          "title": "React Fundamentals",
-          "description": "Learn React from scratch.",
-          "price": "$99"
+          "label": "Home",
+          "link": "/",
+          "subMenus": []
         },
         {
-          "title": "Advanced Next.js",
-          "description": "Master Next.js with real-world projects.",
-          "price": "$149"
+          "label": "Pages",
+          "link": "#",
+          "subMenus": [
+            {
+              "label": "About Us",
+              "link": "/about"
+            },
+            {
+              "label": "Contact",
+              "link": "/contact"
+            }
+          ]
+        },
+        {
+          "label": "Courses",
+          "link": "#",
+          "subMenus": [
+            {
+              "label": "Web Development",
+              "link": "/courses/web-development"
+            },
+            {
+              "label": "Data Science",
+              "link": "/courses/data-science"
+            }
+          ]
+        },
+        {
+          "label": "Blog",
+          "link": "/blog",
+          "subMenus": []
         }
-      ]
+      ],
+      "authButtons": {
+        "login": {
+          "label": "Log in",
+          "link": "/login"
+        },
+        "signUp": {
+          "label": "Sign up",
+          "link": "/signup",
+          "display": "show"
+        }
+      }
     }
   }
 }

@@ -1,19 +1,5 @@
-// 'use client';
-
-import { Geist, Geist_Mono } from "next/font/google";
-
 import 'shared/styles/globals.css';
 import FontProvider from 'shared/components/FontProvider';
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata = {
   title: "Create Next App",
@@ -29,7 +15,7 @@ export default function RootLayout({ children }) {
         {/* Set font-family before hydration to prevent FOUC */}
         <style>{`:root { --font-family: ${fontFamily}; }`}</style>
       </head>
-      <body className={`${geistSans.variable} ${geistMono.variable}`}>
+      <body>
         <FontProvider /> {/* ✅ This is the only Client Component */}
         {children}
       </body>

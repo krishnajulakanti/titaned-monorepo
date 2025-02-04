@@ -2,16 +2,16 @@
 
 import { useEffect } from 'react';
 
-const useFontFamily = () => {
+const useClientConfig = () => {
   useEffect(() => {
-    const fetchFont = async () => {
+    const fetchConfig = async () => {
       try {
         const response = await fetch('/mock/config.json');
         const data = await response.json();
         const fontFamily = data.theme.fontFamily || 'Roboto';
 
         document.documentElement.style.setProperty('--font-family', fontFamily);
-        localStorage.setItem('fontFamily', fontFamily); // Store in localStorage
+        localStorage.setItem('fontFamily', fontFamily);
 
         localStorage.setItem('lms_config', JSON.stringify(data));
 
@@ -20,8 +20,8 @@ const useFontFamily = () => {
       }
     };
 
-    fetchFont();
+    fetchConfig();
   }, []);
 };
 
-export default useFontFamily;
+export default useClientConfig;
